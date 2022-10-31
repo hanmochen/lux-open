@@ -1,0 +1,45 @@
+{
+  "type": "lux_softmax_policy",
+  "algo_related": {
+    "clip_ratio": 0.1,
+    "entropy_coef": 0.01,
+    "map_size": 12,
+    "task_num": 3,
+    "type": "torch_lux_multi_task_ppo_algorithm",
+    "value_coef": 0.5
+  },
+  "mapping": {
+    "0": {},
+    "1": {},
+    "2": {}
+  },
+  "model_related": {
+    "global_feature_dims": [
+      51,
+      18
+    ],
+    "map_channel": 37,
+    "map_size": 12,
+    "model_param": {
+      "all_channel": 128,
+      "emb_dim": 9,
+      "global_channel": 32,
+      "n_res_blocks": 8,
+      "use_transformer": false
+    },
+    "n_actions": [
+      19,
+      17,
+      4
+    ],
+    "type": "torch_lux_model"
+  },
+  "training_context_kwargs": {
+    "step_no": 10012800,
+    "lr": 0.0001,
+    "clip_norm": 0.5,
+    "save_policy_gap": 128,
+    "max_step": 100000000000
+  },
+  "sig": "policy_20220720_174944.966509_step10012800_name_default"
+}
